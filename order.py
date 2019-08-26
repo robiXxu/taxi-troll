@@ -23,7 +23,7 @@ userAgents = json.load(open('userAgents.json'))
 
 while True:
 	try:
-		tr.reset_identity()
+		# tr.reset_identity()
 		tor_ip = tr.get(ip_check_url).text
 		print("Using ip: %s" % tor_ip)
 
