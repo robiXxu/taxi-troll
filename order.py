@@ -64,8 +64,8 @@ while True:
 		print("Sending request payload:")
 		print(json.dumps(data, indent=2))
 
-		# response = tr.post(target_url, data=data, headers=headers)
-		# print("Response status_code %d " % response.status_code)
+		response = tr.post(target_url, data=data, headers=headers)
+		print("Response status_code %d " % response.status_code)
 
 	except Exception as e:
 		print("Error occured %s" % e)
